@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Geovanny Valdes - Desarrollador iOS con experiencia en Android, desarrollo de juegos y web">
+    <meta name="keywords" content="iOS Developer, Android Developer, Game Developer, Web Developer, Portfolio">
+    <meta name="author" content="Geovanny Valdes">
+    <title>GiOS Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#about" class="nav-link" data-i18n="navProfile">Profile</a>
+                <a href="#timeline" class="nav-link" data-i18n="navTimeline">Timeline</a>
+                <a href="#teaching" class="nav-link" data-i18n="navTeaching">Teaching</a>
+                <a href="#awards" class="nav-link" data-i18n="navAwards">Certifications</a>
+            </div>
+
+            <!-- Language Switcher Inline -->
+            <div class="nav-lang-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="pt">PT</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Parallax Icons (Fixed Background) -->
+    <img src="img/icon-8bit-rocket.png" class="parallax-icon icon-rocket" alt="" data-speed="0.05">
+    <img src="img/icon-8bit-coin.png" class="parallax-icon icon-coin" alt="" data-speed="0.08">
+    <img src="img/icon-8bit-heart.png" class="parallax-icon icon-heart" alt="" data-speed="0.03">
+    <img src="img/icon-8bit-controller.png" class="parallax-icon icon-controller" alt="" data-speed="0.06">
+    <img src="img/icon-8bit-floppy.png" class="parallax-icon icon-floppy" alt="" data-speed="0.04">
+    <img src="img/icon-8bit-apple.png" class="parallax-icon icon-apple" alt="" data-speed="0.09">
+    <img src="img/icon-8bit-hand.png" class="parallax-icon icon-hand" alt="" data-speed="0.02">
+    <img src="img/icon-8bit-smile.png" class="parallax-icon icon-smile" alt="" data-speed="0.07">
+    <img src="img/icon-8bit-mobile.png" class="parallax-icon icon-mobile" alt="" data-speed="0.05">
+
+    <!-- Floating Social Bar -->
+    <div class="social-bar">
+        <a href="mailto:giovaldescudriz@gmail.com" class="social-btn" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+        </a>
+        <a href="https://github.com/gioValdes" target="_blank" rel="noopener" class="social-btn" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/GioValdes" target="_blank" rel="noopener" class="social-btn"
+            title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+        </a>
+        <a href="img/Geovanny-Valdes-CV.pdf" class="social-btn" title="Download CV" download>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Hero/About Section Merged -->
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-photo-wrapper">
+                <div class="about-photo">
+                    <img src="img/profile-real.jpg" alt="Geovanny Valdes" class="profile-image">
+                    <img src="img/profile-8bit.png" alt="8-bit Geovanny" class="profile-image-back">
+                </div>
+            </div>
+            <div class="about-content">
+                <h1 class="hero-title" style="margin-bottom: 0.5rem;">GiOS Valdes</h1>
+                <h2 class="about-role-large">
+                    <img src="img/logo-apple.png" alt="iOS" class="role-icon-large">
+                    iOS Developer
+                </h2>
+
+                <p class="about-text" data-i18n="aboutText1" data-i18n-html>
+                    +18 years of experience building high-impact mobile products. Expert in Swift, SwiftUI, and
+                    Objective-C, with a focus on scalable architecture, smooth animations, and premium user experiences.
+                </p>
+                <p class="about-text" data-i18n="aboutText2" data-i18n-html>
+                    Throughout my career, I've worked with Fortune 500 companies like <strong>Walmart</strong> (120M
+                    users),
+                    innovative startups like <strong>Colegium</strong>, and unicorns like <strong>Betterfly</strong>.
+                    My work has been recognized internationally with awards including <strong>Gold Pencil</strong> from
+                    The One Club,
+                    <strong>EuroBest</strong>, and <strong>Lyon Festival</strong>.
+                </p>
+
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <img src="img/logo-apple.png" class="stat-logo" alt="iOS">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label" data-i18n="yearsIOS"></span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fab fa-android" style="font-size: 2.5rem; color: #3DDC84; margin-bottom: 0.5rem;"></i>
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label" data-i18n="yearsAndroid"></span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-terminal"
+                            style="font-size: 2.5rem; color: #f59e0b; margin-bottom: 0.5rem;"></i>
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label" data-i18n="yearsSoftwareDev"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Carousel -->
+        <div class="skills-carousel">
+            <div class="skills-track">
+                <!-- First set -->
+                <div class="skill-item" data-tooltip="Swift">
+                    <img src="img/skill-swift.png" alt="Swift">
+                </div>
+                <div class="skill-item" data-tooltip="SwiftUI">
+                    <img src="img/skill-swiftui.png" alt="SwiftUI">
+                </div>
+                <div class="skill-item" data-tooltip="Objective-C">
+                    <img src="img/skill-objc.png" alt="Objective-C">
+                </div>
+                <div class="skill-item" data-tooltip="Kotlin">
+                    <img src="img/skill-kotlin.png" alt="Kotlin">
+                </div>
+                <div class="skill-item" data-tooltip="Java">
+                    <img src="img/skill-java.png" alt="Java">
+                </div>
+                <div class="skill-item" data-tooltip="Git">
+                    <img src="img/skill-git.png" alt="Git">
+                </div>
+                <div class="skill-item" data-tooltip="Fastlane">
+                    <img src="img/skill-fastlane.png" alt="Fastlane">
+                </div>
+                <div class="skill-item" data-tooltip="Firebase">
+                    <img src="img/skill-firebase.png" alt="Firebase">
+                </div>
+                <div class="skill-item" data-tooltip="GraphQL">
+                    <img src="img/skill-graphql.png" alt="GraphQL">
+                </div>
+                <div class="skill-item" data-tooltip="GitHub Actions">
+                    <img src="img/skill-github-actions.png" alt="GitHub Actions">
+                </div>
+                <!-- Duplicate set 2 for seamless loop -->
+                <div class="skill-item" data-tooltip="Swift">
+                    <img src="img/skill-swift.png" alt="Swift">
+                </div>
+                <div class="skill-item" data-tooltip="SwiftUI">
+                    <img src="img/skill-swiftui.png" alt="SwiftUI">
+                </div>
+                <div class="skill-item" data-tooltip="Objective-C">
+                    <img src="img/skill-objc.png" alt="Objective-C">
+                </div>
+                <div class="skill-item" data-tooltip="Kotlin">
+                    <img src="img/skill-kotlin.png" alt="Kotlin">
+                </div>
+                <div class="skill-item" data-tooltip="Java">
+                    <img src="img/skill-java.png" alt="Java">
+                </div>
+                <div class="skill-item" data-tooltip="Git">
+                    <img src="img/skill-git.png" alt="Git">
+                </div>
+                <div class="skill-item" data-tooltip="Fastlane">
+                    <img src="img/skill-fastlane.png" alt="Fastlane">
+                </div>
+                <div class="skill-item" data-tooltip="Firebase">
+                    <img src="img/skill-firebase.png" alt="Firebase">
+                </div>
+                <div class="skill-item" data-tooltip="GraphQL">
+                    <img src="img/skill-graphql.png" alt="GraphQL">
+                </div>
+                <div class="skill-item" data-tooltip="GitHub Actions">
+                    <img src="img/skill-github-actions.png" alt="GitHub Actions">
+                </div>
+                <!-- Duplicate set 3 for seamless loop -->
+                <div class="skill-item" data-tooltip="Swift">
+                    <img src="img/skill-swift.png" alt="Swift">
+                </div>
+                <div class="skill-item" data-tooltip="SwiftUI">
+                    <img src="img/skill-swiftui.png" alt="SwiftUI">
+                </div>
+                <div class="skill-item" data-tooltip="Objective-C">
+                    <img src="img/skill-objc.png" alt="Objective-C">
+                </div>
+                <div class="skill-item" data-tooltip="Kotlin">
+                    <img src="img/skill-kotlin.png" alt="Kotlin">
+                </div>
+                <div class="skill-item" data-tooltip="Java">
+                    <img src="img/skill-java.png" alt="Java">
+                </div>
+                <div class="skill-item" data-tooltip="Git">
+                    <img src="img/skill-git.png" alt="Git">
+                </div>
+                <div class="skill-item" data-tooltip="Fastlane">
+                    <img src="img/skill-fastlane.png" alt="Fastlane">
+                </div>
+                <div class="skill-item" data-tooltip="Firebase">
+                    <img src="img/skill-firebase.png" alt="Firebase">
+                </div>
+                <div class="skill-item" data-tooltip="GraphQL">
+                    <img src="img/skill-graphql.png" alt="GraphQL">
+                </div>
+                <div class="skill-item" data-tooltip="GitHub Actions">
+                    <img src="img/skill-github-actions.png" alt="GitHub Actions">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <main class="timeline-container" id="timeline">
+        <div class="timeline-line-bg"></div>
+        <div class="timeline-line-progress"></div>
+
+        <!-- 2024 - Wizeline SuperApp -->
+        <article class="timeline-entry" data-category="ios">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+                <div class="timeline-image-wrapper">
+                    <img src="img/project-wizeline-final.png" alt="Wizeline SuperApp" class="timeline-image"
+                        loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-date">2024</span>
+                        </div>
+                        <span class="timeline-role"><img src="img/logo-apple.png" class="role-icon-small" alt="iOS">
+                            Senior iOS Consultant</span>
+                    </div>
+                    <h2 class="timeline-title">Wizeline - BAZ SuperApp</h2>
+                    <p class="timeline-company">Grupo Salinas • Mexico</p>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">VIPER</span>
+                        <span class="tech-tag">Unit Testing</span>
+                        <span class="tech-tag">Fintech</span>
+                        <span class="tech-tag">E-commerce</span>
+                        <span class="tech-tag">Streaming</span>
+                    </div>
+                    <p class="timeline-description" data-i18n="wizelineDesc">
+                        Contributed to the BAZ SuperApp, a massive all-in-one digital ecosystem transforming banking and
+                        lifestyle in Mexico. The app integrates financial services, e-commerce, live entertainment, and
+                        business management tools into a single super application, serving millions of users with secure
+                        payments, digital wallets, and media streaming.
+                    </p>
+                    <div class="timeline-highlights">
+                        <h4 data-i18n="keyResponsibilities">Key Responsibilities:</h4>
+                        <ul>
+                            <li>Led the migration of legacy XIB views to programmatic Swift and SwiftUI views</li>
+                            <li>Migration from GCD to Strict Concurrency</li>
+                            <li>Mentored junior developers and established code quality standards</li>
+                            <li>Optimized app launch time by 40%</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-achievements">
+                        <div class="achievement-item">
+                            <span class="achievement-icon">🚀</span>
+                            <div>
+                                <strong data-i18n="superApp">Super App</strong>
+                                <p data-i18n="millionsUsers">Millions of users</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-icon">🏦</span>
+                            <div>
+                                <strong data-i18n="fintech">Fintech</strong>
+                                <p data-i18n="bankingEvolution">Banking evolution</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2023 - Walmart -->
+        <article class="timeline-entry" data-category="ios">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+                <div class="timeline-image-wrapper">
+                    <div
+                        style="width: 100%; height: 100%; min-height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 20px; overflow: hidden; background: transparent;">
+                        <img src="img/project-walmart-final.png" alt="Walmart App" class="timeline-image" loading="lazy"
+                            style="object-fit: contain; background: transparent; padding: 0;">
+                    </div>
+                </div>
+                <div class="timeline-text">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-date">2023</span>
+                        </div>
+                        <span class="timeline-role"><img src="img/logo-apple.png" class="role-icon-small" alt="iOS">
+                            Senior iOS Developer</span>
+                    </div>
+                    <h2 class="timeline-title">Walmart</h2>
+                    <p class="timeline-company">.monks - Walmart</p>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">UIKit</span>
+                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">Unit Testing</span>
+                    </div>
+                    <p class="timeline-description" data-i18n="walmartDesc">
+                        Engineered key features for the Walmart iOS application, one of the world's largest retail
+                        platforms. Focused on modernizing the codebase to Swift, enhancing the shopping experience for
+                        millions of daily users through optimized product search, seamless checkout flows, and
+                        high-performance UI components.
+                    </p>
+                    <div class="timeline-highlights">
+                        <h4 data-i18n="keyResponsibilities">Key Responsibilities:</h4>
+                        <ul>
+                            <li>Refactored core shopping cart functionality</li>
+                            <li>Implemented new checkout flows increasing conversion</li>
+                            <li>Collaborated with cross-functional teams in Agile environment</li>
+                            <li>Ensured 90% unit test coverage</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-achievements">
+                        <div class="achievement-item">
+                            <span class="achievement-icon">🛒</span>
+                            <div>
+                                <strong data-i18n="retailGiant">Retail Giant</strong>
+                                <p data-i18n="globalScale">Global scale app</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-icon">⚡</span>
+                            <div>
+                                <strong data-i18n="performance">Performance</strong>
+                                <p data-i18n="highTraffic">High traffic optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2023 - Bridgestone -->
+        <article class="timeline-entry" data-category="ios">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+                <div class="timeline-image-wrapper">
+                    <img src="img/project-bridgestone.jpg" alt="Bridgestone Apps" class="timeline-image" loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-date">2022</span>
+                        </div>
+                        <span class="timeline-role"><img src="img/logo-apple.png" class="role-icon-small" alt="iOS">
+                            Senior iOS Consultant</span>
+                    </div>
+                    <h2 class="timeline-title">Bridgestone - TirePlus & Firestone</h2>
+                    <p class="timeline-company">.monks - Bridgestone</p>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">White Label</span>
+                        <span class="tech-tag">UIKit</span>
+                        <span class="tech-tag">Modular Arch</span>
+                    </div>
+                    <p class="timeline-description" data-i18n="bridgestoneDesc">
+                        Developed and maintained two distinct retail applications, <strong>TirePlus</strong> and
+                        <strong>Firestone</strong>, using a single shared core codebase. Implemented a "White Label"
+                        architecture that allowed both apps to function identically while featuring unique UI designs
+                        tailored
+                        to each of Bridgestone's primary sales lines.
+                    </p>
+                    <div class="timeline-highlights">
+                        <h4 data-i18n="keyResponsibilities">Key Responsibilities:</h4>
+                        <ul>
+                            <li>Architected shared core library for multi-app support</li>
+                            <li>Implemented distinct UI themes for TirePlus and Firestone brands</li>
+                            <li>Optimized performance across both applications</li>
+                            <li>Streamlined maintenance by unifying business logic</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-achievements">
+                        <div class="achievement-item">
+                            <span class="achievement-icon">🔄</span>
+                            <div>
+                                <strong data-i18n="whiteLabel">White Label</strong>
+                                <p data-i18n="twoAppsOneCore">2 Apps, 1 Core</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-icon">🎨</span>
+                            <div>
+                                <strong data-i18n="customUI">Custom UI</strong>
+                                <p data-i18n="brandIdentity">Distinct brand identities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2022 - Betterfly -->
+        <article class="timeline-entry" data-category="ios">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+                <div class="timeline-image-wrapper">
+                    <div
+                        style="width: 100%; height: 100%; min-height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 20px; overflow: hidden; background: transparent;">
+                        <img src="img/project-betterfly-final.png" alt="Betterfly App" class="timeline-image"
+                            loading="lazy" style="object-fit: contain; background: transparent; padding: 0;">
+                    </div>
+                </div>
+                <div class="timeline-text">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-date">2022</span>
+                        </div>
+                        <span class="timeline-role"><img src="img/logo-apple.png" class="role-icon-small" alt="iOS">
+                            Senior iOS Consultant</span>
+                    </div>
+                    <h2 class="timeline-title">CleverIT - Betterfly</h2>
+                    <p class="timeline-company">Health Tech Unicorn • Chile</p>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">SwiftUI</span>
+                        <span class="tech-tag">HealthKit</span>
+                        <span class="tech-tag">Core Bluetooth</span>
+                        <span class="tech-tag">Combine</span>
+                    </div>
+                    <p class="timeline-description" data-i18n="betterflyDesc">
+                        Consulted for Betterfly, Latin America's first social unicorn. This health-insurtech platform
+                        gamifies wellness by converting healthy habits (like walking or meditating) into growing life
+                        insurance coverage and charitable donations. Worked on integrating HealthKit data and ensuring a
+                        seamless, rewarding user experience.
+                    </p>
+                    <div class="timeline-highlights">
+                        <h4 data-i18n="keyResponsibilities">Key Responsibilities:</h4>
+                        <ul>
+                            <li>Integrated HealthKit for comprehensive health data tracking</li>
+                            <li>Developed Bluetooth connectivity for wearable devices</li>
+                            <li>Built reactive UI components using SwiftUI and Combine</li>
+                            <li>Implemented real-time health metrics visualization</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-achievements">
+                        <div class="achievement-item">
+                            <span class="achievement-icon">🦄</span>
+                            <div>
+                                <strong data-i18n="unicornStartup">Unicorn</strong>
+                                <p data-i18n="highGrowth">High growth startup</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-icon">❤️</span>
+                            <div>
+                                <strong data-i18n="healthKit">HealthKit</strong>
+                                <p data-i18n="deepIntegration">Deep integration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2022 - Fpay -->
+        <article class="timeline-entry" data-category="ios">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+                <div class="timeline-image-wrapper">
+                    <img src="img/project-fpay.jpg" alt="Fpay Digital Wallet" class="timeline-image" loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-date">2021</span>
+                        </div>
+                        <span class="timeline-role"><img src="img/logo-apple.png" class="role-icon-small" alt="iOS">
+                            Senior iOS Consultant</span>
+                    </div>
+                    <h2 class="timeline-title">CleverIT - Fpay</h2>
+                    <p class="timeline-company">Fintech Payment Solution • Chile</p>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">VIPER</span>
+                        <span class="tech-tag">Unit Testing</span>
+                        <span class="tech-tag">CI/CD</span>
+                    </div>
+                    <p class="timeline-description" data-i18n="fpayDesc">
+                        Developed Fpay, a robust digital wallet and payment solution for the Falabella Group. The app
+                        enabled contactless QR payments, peer-to-peer transfers, and loyalty program integration across
+                        a vast network of retailers, processing high-volume financial transactions with bank-grade
+                        security.
+                    </p>
+                    <div class="timeline-highlights">
+                        <h4 data-i18n="keyResponsibilities">Key Responsibilities:</h4>
+                        <ul>
+                            <li>Implemented secure payment modules using VIPER architecture</li>
+                            <li>Increased unit test coverage to over 85%</li>
+                            <li>Optimized CI/CD pipelines for faster delivery</li>
+                            <li>Mentored junior developers on best practices</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-achievements">
+                        <div class="achievement-item">
+                            <span class="achievement-icon">🔒</span>
+                            <div>
+                                <strong data-i18n="securePayments">Security</strong>
+                                <p data-i18n="paymentFlows">Secure payment flows</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-icon">🏗️</span>
+                            <div>
+                                <strong data-i18n="viperArch">VIPER</strong>
+                                <p data-i18n="scalableCode">Scalable architecture</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2021 - Colegium -->
+        <article class="timeline-entry" data-category="ios">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+                <div class="timeline-image-wrapper">
+                    <div
+                        style="width: 100%; height: 100%; min-height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 20px; overflow: hidden; background: transparent;">
+                        <img src="img/project-colegium-pencil.png" alt="Colegium Pencil App" class="timeline-image"
+                            loading="lazy" style="object-fit: contain; background: transparent; padding: 0;">
+                    </div>
+                </div>
+                <div class="timeline-text">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-date">2019</span>
+                        </div>
+                        <span class="timeline-role"><img src="img/logo-apple.png" class="role-icon-small" alt="iOS">
+                            Senior iOS Developer</span>
+                    </div>
+                    <h2 class="timeline-title">Colegium - Pencil</h2>
+                    <p class="timeline-company">EdTech Platform • Chile</p>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Real-time</span>
+                        <span class="tech-tag">Push Notifications</span>
+                    </div>
+                    <p class="timeline-description" data-i18n="colegiumDesc">
+                        Developed "Pencil", a comprehensive ed-tech ecosystem comprising two native iOS applications
+                        serving three distinct user roles (Parents, Teachers, Administrators). The platform facilitated
+                        real-time communication and academic tracking using Firebase, enabling instant messaging,
+                        activity sharing, and digital report cards for thousands of users.
+                    </p>
+                    <div class="timeline-highlights">
+                        <h4 data-i18n="keyResponsibilities">Key Responsibilities:</h4>
+                        <ul>
+                            <li data-i18n="colegiumItem1">Led mobile development for iOS and Android platforms</li>
+                            <li data-i18n="colegiumItem2">Implemented Firebase architecture for scalable backend
+                                services</li>
+                            <li data-i18n="colegiumItem3">Bug analysis and analytics implementation</li>
+                            <li data-i18n="colegiumItem4">Reduced costs while scaling app capacity by 3x</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-achievements">
+                        <div class="achievement-item">
+                            <span class="achievement-icon">🎓</span>
+                            <div>
+                                <strong data-i18n="edTech">EdTech</strong>
+                                <p data-i18n="educationImpact">Education impact</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-icon">🔥</span>
+                            <div>
+                                <strong data-i18n="firebase">Firebase</strong>
+                                <p data-i18n="realTimeSync">Real-time sync</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2019 - Cristovisión -->
+        <article class="timeline-entry" data-category="ios">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+                <div class="timeline-image-wrapper">
+                    <div
+                        style="width: 100%; height: 100%; min-height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 20px; overflow: hidden; background: transparent;">
+                        <img src="img/project-cristovision-final.png" alt="Cristovisión App" class="timeline-image"
+                            loading="lazy" style="object-fit: contain; background: transparent; padding: 0;">
+                    </div>
+                </div>
+                <div class="timeline-text">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-date">2019</span>
+                        </div>
+                        <span class="timeline-role"><img src="img/logo-apple.png" class="role-icon-small" alt="iOS"> <i
+                                class="fab fa-android" style="font-size: 1rem;"></i> Mobile
+                            Developer</span>
+                    </div>
+                    <h2 class="timeline-title">Cristovisión</h2>
+                    <p class="timeline-company">TV Channel</p>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">iOS</span>
+                        <span class="tech-tag">Android</span>
+                        <span class="tech-tag">Streaming</span>
+                        <span class="tech-tag">API Integration</span>
+                    </div>
+                    <p class="timeline-description" data-i18n="cristovisionDesc">
+                        Developed and supported the mobile applications for Cristovisión, a major Catholic TV channel in
+                        Colombia.
+                        Enabled live streaming and on-demand content for thousands of users on both iOS and Android
+                        platforms, ensuring a seamless viewing experience.
+                    </p>
+                    <div class="timeline-highlights">
+                        <h4 data-i18n="keyResponsibilities">Key Responsibilities:</h4>
+                        <ul>
+                            <li>Developed native iOS and Android applications from scratch</li>
+                            <li>Integrated live streaming protocols (HLS) for real-time broadcasting</li>
+                            <li>Implemented video-on-demand (VOD) features with custom player</li>
+                            <li>Managed app store submissions and updates</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-achievements">
+                        <div class="achievement-item">
+                            <span class="achievement-icon">📺</span>
+                            <div>
+                                <strong data-i18n="streaming">Streaming</strong>
+                                <p data-i18n="liveContent">Live & VOD content</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-icon">📱</span>
+                            <div>
+                                <strong data-i18n="crossPlatform">Native</strong>
+                                <p data-i18n="iosAndAndroid">iOS & Android</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2017 - Remumber (Award-winning) -->
+        <article class="timeline-entry" data-category="ios">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+                <div class="timeline-image-wrapper">
+                    <img src="img/project-remumber.png" alt="Remumber App" class="timeline-image" loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-date">2017</span>
+                        </div>
+                        <span class="timeline-role"><i class="fab fa-android" style="font-size: 1rem;"></i> Founder &
+                            Lead Developer</span>
+                    </div>
+                    <h2 class="timeline-title">Remumber</h2>
+                    <p class="timeline-company">.monks • Europe Missing Children</p>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">SpriteKit</span>
+                        <span class="tech-tag">GameKit</span>
+                        <span class="tech-tag">Core Animation</span>
+                    </div>
+                    <p class="timeline-description" data-i18n="remumberDesc">
+                        Created Remumber, an award-winning puzzle game designed to train working memory through
+                        numerical sequences. The app features an immersive interface, progressive difficulty levels, and
+                        'Achievements' mode, recognized globally for its innovative approach to cognitive training and
+                        game design.
+                    </p>
+                    <div class="timeline-highlights">
+                        <h4 data-i18n="technicalInnovation">Technical Innovation:</h4>
+                        <ul>
+                            <li>Custom-built all UI components with complex animations and transitions</li>
+                            <li>Implemented innovative lockscreen functionality just before Android deprecated the API
+                            </li>
+                            <li>Created gamified learning experience with progressive difficulty levels</li>
+                            <li>Designed for social impact with focus on child safety</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-achievements">
+                        <div class="achievement-item">
+                            <span class="achievement-icon">🏆</span>
+                            <div>
+                                <strong data-i18n="goldPencil">Gold Pencil</strong>
+                                <p data-i18n="theOneClub">The One Club</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-icon">🏆</span>
+                            <div>
+                                <strong data-i18n="euroBestAward">EuroBest Award</strong>
+                                <p data-i18n="europeanExcellence">European Excellence</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-icon">🏆</span>
+                            <div>
+                                <strong data-i18n="lyonAward">Lyon Award</strong>
+                                <p data-i18n="internationalRecognition">International Recognition</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2013 - InvestFlex -->
+        <article class="timeline-entry" data-category="ios">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+                <div class="timeline-image-wrapper">
+                    <img src="img/project-investflex.jpg" alt="InvestFlex Trading Platform" class="timeline-image"
+                        loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-date">2013</span>
+                        </div>
+                        <span class="timeline-role">
+                            <img src="img/logo-apple.png" class="role-icon-small" alt="iOS">
+                            <i class="fab fa-android" style="font-size: 1rem;"></i>
+                            <i class="fas fa-laptop-code" style="font-size: 1rem; color: #8b5cf6;"></i>
+                            Multi-Platform Developer
+                        </span>
+                    </div>
+                    <h2 class="timeline-title">InvestFlex - Stock Trading Platform</h2>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">Objective-C</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Desktop</span>
+                        <span class="tech-tag">Financial Tech</span>
+                    </div>
+                    <p class="timeline-description" data-i18n="investflexDesc">
+                        Built a real-time stock trading platform for the São Paulo Stock Exchange. The solution provided
+                        traders with live market data, portfolio management tools, and rapid execution capabilities
+                        across both desktop and mobile interfaces, handling complex financial data streams.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2012 - BlackBerry Era -->
+        <article class="timeline-entry" data-category="game">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+                <div class="timeline-image-wrapper">
+                    <img src="img/project-blackberry.jpg" alt="BlackBerry Games" class="timeline-image" loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-date">2012</span>
+                        </div>
+                        <span class="timeline-role">
+                            <img src="img/logo-blackberry-new.png" class="role-icon-small" alt="BlackBerry"
+                                style="filter: brightness(0) invert(1);">
+                            <img src="img/logo-apple.png" class="role-icon-small" alt="iOS">
+                            <i class="fab fa-android" style="font-size: 1rem;"></i>
+                            Mobile Game Developer
+                        </span>
+                    </div>
+                    <h2 class="timeline-title">TelCel Game</h2>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">Cascades</span>
+                        <span class="tech-tag">Objective-C</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">AIR</span>
+                        <span class="tech-tag">PhoneGap</span>
+                    </div>
+                    <p class="timeline-description" data-i18n="blackberryDesc">
+                        After Flash was banned from iOS, transitioned to mobile development starting with BlackBerry in
+                        Cascades.
+                        Became one of the developers with the most games on BlackBerry App World.
+                        Studied Objective-C and Java to build native iOS, BlackBerry, and Android apps, while also
+                        creating
+                        cross-platform applications. Won 2nd place Best App and 1st place Most Innovative App at
+                        BlackBerry Challenge Argentina.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2011 - Game Developer -->
+        <article class="timeline-entry" data-category="game">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+                <div class="timeline-image-wrapper">
+                    <img src="img/project-webgames.jpg" alt="Web and Facebook Games" class="timeline-image"
+                        loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-date">2011</span>
+                        </div>
+                        <span class="timeline-role"><i class="fas fa-laptop-code"
+                                style="font-size: 1rem; color: #8b5cf6;"></i> Game Developer</span>
+                    </div>
+                    <h2 class="timeline-title">Web & Game Developer</h2>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">ActionScript</span>
+                        <span class="tech-tag">Flash</span>
+                        <span class="tech-tag">MVC</span>
+                        <span class="tech-tag">3D</span>
+                    </div>
+                    <p class="timeline-description" data-i18n="webgamesDesc">
+                        Became a game developer for web and Facebook, as well as desktop applications for Windows and
+                        Mac.
+                        Learned first architecture pattern (MVC), various game design patterns, and gained experience
+                        working with APIs and 3D technologies.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2009 - Front-end Developer -->
+        <article class="timeline-entry" data-category="web">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+                <div class="timeline-image-wrapper">
+                    <img src="img/project-newbeetle.png" alt="Front-end Development" class="timeline-image"
+                        loading="lazy">
+                </div>
+                <div class="timeline-text">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-date">2009</span>
+                        </div>
+                        <span class="timeline-role"><i class="fas fa-laptop-code"
+                                style="font-size: 1rem; color: #8b5cf6;"></i> Web Developer</span>
+                    </div>
+                    <h2 class="timeline-title">Front-end</h2>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Flash</span>
+                        <span class="tech-tag">ActionScript</span>
+                        <span class="tech-tag">Google APIs</span>
+                    </div>
+                    <p class="timeline-description" data-i18n="frontendDesc">
+                        Transitioned into front-end and web development, working with Flash, ActionScript, and
+                        JavaScript.
+                        Integrated Google APIs like Street View, Maps, and Earth. Worked at digital agencies in Colombia
+                        and Argentina, winning multiple programming awards and solidifying expertise in interactive web
+                        technologies.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2005 - UI/UX Beginning -->
+        <article class="timeline-entry" data-category="web">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+                <div class="timeline-image-wrapper">
+                    <div
+                        style="width: 100%; height: 100%; min-height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 20px; overflow: hidden; background: #000;">
+                        <img src="img/client-logos.png"
+                            alt="Trusted by Coca-Cola, Mastercard, Unilever, Plan International, Universidad San Gregorio"
+                            class="timeline-image" loading="lazy" style="object-fit: contain; padding: 20px;">
+                    </div>
+                </div>
+                <div class="timeline-text">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-date">2005</span>
+                        </div>
+                        <span class="timeline-role"><i class="fas fa-laptop-code"
+                                style="font-size: 1rem; color: #8b5cf6;"></i> UI/UX Designer</span>
+                    </div>
+                    <h2 class="timeline-title">Start Journey as UI/UX Designer</h2>
+                    <div class="timeline-tech">
+                        <span class="tech-tag">UI Design</span>
+                        <span class="tech-tag">UX Design</span>
+                        <span class="tech-tag">2D Animation</span>
+                    </div>
+                    <p class="timeline-description" data-i18n="uiuxDesc">
+                        Started career in UI/UX design, working with major companies like Coca-Cola, Mastercard,
+                        and Fundación Plan International through digital agencies such as Indexcol and Dominion Studio.
+                        Also worked as a 2D animation professor at Universidad San Gregorio de Portoviejo in Ecuador.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Personal Projects & Teaching Section -->
+    <section class="teaching-section" id="teaching">
+        <h2 class="section-title" data-i18n="teachingTitle">Teaching & Community</h2>
+
+        <div class="teaching-grid">
+            <!-- Platzi Course -->
+            <div class="teaching-card">
+                <div class="teaching-image-wrapper">
+                    <img src="img/project-platzi.jpg" alt="Platzi Course" class="teaching-card-image">
+                    <div class="teaching-logo-badge">
+                        <img src="img/logo-platzi.png" alt="Platzi Logo" class="teaching-logo">
+                    </div>
+                </div>
+                <div class="teaching-header">
+                    <div class="teaching-info">
+                        <h3 data-i18n="platziCourseTitle">Curso de Android: Despliegue a Google Play Store</h3>
+                        <p>Platzi • 2025</p>
+                    </div>
+                </div>
+                <div class="teaching-content">
+                    <p class="teaching-description" data-i18n="platziCourseDesc">
+                        Launch, manage, and monitor Android apps on Google Play using Git, Firebase, automated testing,
+                        A/B testing, rollout strategies, and automation with Fastlane and Github Actions.
+                    </p>
+                    <div class="teaching-tags">
+                        <span class="tech-tag">Git Flow</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Fastlane</span>
+                        <span class="tech-tag">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Developer Conference Weekend -->
+            <div class="teaching-card">
+                <div class="teaching-image-wrapper">
+                    <img src="img/project-developer-weekend.jpg" alt="Developer Conference Weekend"
+                        class="teaching-card-image">
+                    <div class="teaching-logo-badge">
+                        <img src="img/logo-usgp.png" alt="Universidad San Gregorio Logo" class="teaching-logo">
+                    </div>
+                </div>
+                <div class="teaching-header">
+                    <div class="teaching-info">
+                        <h3 data-i18n="developerConferenceTitle">Developer Conference Weekend</h3>
+                        <p>Universidad San Gregorio • 2011</p>
+                    </div>
+                </div>
+                <div class="teaching-content">
+                    <p class="teaching-description" data-i18n="developerConferenceDesc">
+                        Invited speaker for a 2-day technical workshop at Universidad San Gregorio de Portoviejo.
+                        Delivered in-depth talks on game development with ActionScript and advanced techniques for
+                        leveraging GPU acceleration in browser-based games.
+                    </p>
+                    <div class="teaching-tags">
+                        <span class="tech-tag">ActionScript</span>
+                        <span class="tech-tag">Game Dev</span>
+                        <span class="tech-tag">GPU Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Certifications Section -->
+    <section class="awards-section" id="awards">
+        <div class="awards-container">
+            <!-- Certifications First (More Relevant) -->
+            <h2 class="section-title" data-i18n="certificationsTitle">Certifications</h2>
+
+            <div class="certifications-grid">
+                <div class="cert-item"
+                    style="background: rgba(99, 102, 241, 0.1); border-color: rgba(99, 102, 241, 0.3);">
+                    <span class="cert-icon">🎓</span>
+                    <div>
+                        <h4>Graphic Design - Bachelor's Degree</h4>
+                        <p>CUN Colombia</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-icon">📱</span>
+                    <div>
+                        <h4>SwiftUI Essential Training</h4>
+                        <p>LinkedIn Learning</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-icon">🧪</span>
+                    <div>
+                        <h4>iOS Test-Driven Development</h4>
+                        <p>LinkedIn Learning</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-icon">🎨</span>
+                    <div>
+                        <h4>Core Animation</h4>
+                        <p>LinkedIn Learning</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-icon">🏗️</span>
+                    <div>
+                        <h4>iOS Development: Architecture</h4>
+                        <p>LinkedIn Learning</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-icon">🔐</span>
+                    <div>
+                        <h4>Keychain Access</h4>
+                        <p>LinkedIn Learning</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-icon">🤖</span>
+                    <div>
+                        <h4>Machine Learning: Core ML</h4>
+                        <p>LinkedIn Learning</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-icon">⚡</span>
+                    <div>
+                        <h4>Learning Combine with Swift</h4>
+                        <p>LinkedIn Learning</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-icon">🛡️</span>
+                    <div>
+                        <h4>Ethical Hacking: Mobile Devices and Platforms</h4>
+                        <p>LinkedIn Learning</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-icon">🏗️</span>
+                    <div>
+                        <h4>Composable SwiftUI Architecture Using Redux</h4>
+                        <p>LinkedIn Learning</p>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <span class="cert-icon">🌍</span>
+                    <div>
+                        <h4>EF SET English Certificate (C1 Advanced)</h4>
+                        <p>EF SET - 63/100</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards Second (Less Emphasis) -->
+            <h2 class="section-title" style="margin-top: 4rem; font-size: var(--font-size-2xl);"
+                data-i18n="awardsTitle">Awards & Recognition
+            </h2>
+
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon">🏆</div>
+                    <h3 class="award-title">Gold Pencil</h3>
+                    <p class="award-org">The One Club</p>
+                    <p class="award-project">Remumber App - 2017</p>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">🏆</div>
+                    <h3 class="award-title">EuroBest Award</h3>
+                    <p class="award-org">European Advertising Awards</p>
+                    <p class="award-project">Remumber App - 2017</p>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">🏆</div>
+                    <h3 class="award-title">Lyon Festival</h3>
+                    <p class="award-org">International Creativity Festival</p>
+                    <p class="award-project">Remumber App - 2017</p>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">🥇</div>
+                    <h3 class="award-title">Most Innovative App</h3>
+                    <p class="award-org">BlackBerry Challenge</p>
+                    <p class="award-project">Argentina - 2012</p>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">🥈</div>
+                    <h3 class="award-title">Best App - 2nd Place</h3>
+                    <p class="award-org">BlackBerry Challenge</p>
+                    <p class="award-project">Argentina - 2012</p>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">🎖️</div>
+                    <h3 class="award-title">Gold - Ojo de Iberoamérica</h3>
+                    <p class="award-org">Web Development</p>
+                    <p class="award-project">Multiple Projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p data-i18n="footerText">&copy; 2025 GiOS Valdes.</p>
+        </div>
+    </footer>
+
+    <script src="js/gradient-bg.js"></script>
+    <script src="js/i18n.js"></script>
+    <script>
+        // Timeline Progress Animation & Background Color Change
+        document.addEventListener('DOMContentLoaded', () => {
+            const timelineContainer = document.querySelector('.timeline-container');
+            const progressLine = document.querySelector('.timeline-line-progress');
+            const body = document.body;
+
+            // Background colors for different sections
+            const bgColors = [
+                '#0f172a', // Start (Dark Blue)
+                '#1e1b4b', // Indigo
+                '#312e81', // Deep Purple
+                '#111827', // Gray
+                '#0f172a'  // Back to Start
+            ];
+
+            // Timeline colors - cycle through these as we scroll
+            const timelineColors = [
+                '#6366f1', // Indigo
+                '#ec4899', // Pink
+                '#10b981', // Emerald
+                '#f59e0b', // Amber
+                '#3b82f6'  // Blue
+            ];
+
+            if (timelineContainer && progressLine) {
+                window.addEventListener('scroll', () => {
+                    const containerRect = timelineContainer.getBoundingClientRect();
+                    const containerTop = containerRect.top;
+                    const containerHeight = containerRect.height;
+                    const windowHeight = window.innerHeight;
+                    const scrollTop = window.scrollY;
+                    const docHeight = document.body.scrollHeight - windowHeight;
+
+                    // --- Timeline Animation ---
+                    // We want the line to start growing when the top of the container hits the center of the screen
+                    // and finish when the bottom of the container hits the center
+                    const viewportCenter = windowHeight / 2;
+
+                    // Calculate position relative to the container
+                    let scrollPercentage = 0;
+
+                    if (containerTop < viewportCenter) {
+                        const distTraveled = viewportCenter - containerTop;
+                        scrollPercentage = distTraveled / containerHeight;
+                    }
+
+                    // Clamp percentage between 0 and 1
+                    scrollPercentage = Math.max(0, Math.min(1, scrollPercentage));
+
+                    // Update height
+                    progressLine.style.height = `${scrollPercentage * 100}%`;
+
+                    // Change timeline color based on progress with smooth interpolation
+                    // We map the scrollPercentage (0 to 1) to the color array indices
+
+                    // Calculate the position in the color array (float)
+                    const colorPosition = scrollPercentage * (timelineColors.length - 1);
+
+                    // Get the two colors to interpolate between
+                    const index1 = Math.floor(colorPosition);
+                    const index2 = Math.min(index1 + 1, timelineColors.length - 1);
+
+                    // Calculate the interpolation factor (0 to 1) between the two colors
+                    const colorFactor = colorPosition - index1;
+
+                    const colorStart = timelineColors[index1];
+                    const colorEnd = timelineColors[index2];
+
+                    // Reuse the interpolateColor function (defined below, but hoisted or we can define it here)
+                    // Since interpolateColor is defined inside the scroll listener below, we should move it out or duplicate it.
+                    // Let's duplicate the logic for simplicity and robustness here.
+
+                    const hexToRgb = (hex) => {
+                        const r = parseInt(hex.slice(1, 3), 16);
+                        const g = parseInt(hex.slice(3, 5), 16);
+                        const b = parseInt(hex.slice(5, 7), 16);
+                        return [r, g, b];
+                    };
+
+                    const [r1, g1, b1] = hexToRgb(colorStart);
+                    const [r2, g2, b2] = hexToRgb(colorEnd);
+
+                    const r = Math.round(r1 + colorFactor * (r2 - r1));
+                    const g = Math.round(g1 + colorFactor * (g2 - g1));
+                    const b = Math.round(b1 + colorFactor * (b2 - b1));
+
+                    const interpolatedColor = `rgb(${r}, ${g}, ${b})`;
+
+                    progressLine.style.background = interpolatedColor;
+                    progressLine.style.boxShadow = `0 0 15px ${interpolatedColor}`;
+
+                    // --- Background Color Animation ---
+                    const scrollFraction = scrollTop / docHeight;
+                    const bgIndex = Math.min(
+                        Math.floor(scrollFraction * (bgColors.length - 1)),
+                        bgColors.length - 2
+                    );
+
+                    const color1 = bgColors[bgIndex];
+                    const color2 = bgColors[bgIndex + 1];
+                    const factor = (scrollFraction * (bgColors.length - 1)) - bgIndex;
+
+                    // Simple interpolation function
+                    const interpolateColor = (c1, c2, factor) => {
+                        const r1 = parseInt(c1.slice(1, 3), 16);
+                        const g1 = parseInt(c1.slice(3, 5), 16);
+                        const b1 = parseInt(c1.slice(5, 7), 16);
+
+                        const r2 = parseInt(c2.slice(1, 3), 16);
+                        const g2 = parseInt(c2.slice(3, 5), 16);
+                        const b2 = parseInt(c2.slice(5, 7), 16);
+
+                        const r = Math.round(r1 + factor * (r2 - r1));
+                        const g = Math.round(g1 + factor * (g2 - g1));
+                        const b = Math.round(b1 + factor * (b2 - b1));
+
+                        return `rgb(${r}, ${g}, ${b})`;
+                    };
+
+                    body.style.backgroundColor = interpolateColor(color1, color2, factor);
+
+                    // --- Parallax Icons Animation ---
+                    const parallaxIcons = document.querySelectorAll('.parallax-icon');
+                    parallaxIcons.forEach(icon => {
+                        const speed = parseFloat(icon.getAttribute('data-speed'));
+                        const yPos = scrollTop * speed;
+                        icon.style.transform = `translateY(${yPos}px)`;
+                    });
+                });
+            }
+        });
+    </script>
+
+    <!-- Arrow Indicators for Social Bar -->
+    <div class="arrow-indicators">
+        <img src="img/arrow-2.png" class="arrow-indicator arrow-top" alt="">
+        <img src="img/arrow-1.png" class="arrow-indicator arrow-bottom" alt="">
+    </div>
+
+    <script>
+        // Arrow indicators animation on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const arrows = document.querySelector('.arrow-indicators');
+            const footer = document.querySelector('.footer');
+            const socialBar = document.querySelector('.social-bar');
+
+            function checkScroll() {
+                if (!footer || !arrows) return;
+
+                const footerRect = footer.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+
+                // Show arrows when footer is visible
+                if (footerRect.top < windowHeight) {
+                    arrows.classList.add('visible');
+                    if (socialBar) socialBar.classList.add('glow-active');
+                } else {
+                    arrows.classList.remove('visible');
+                    if (socialBar) socialBar.classList.remove('glow-active');
+                }
+            }
+
+            window.addEventListener('scroll', checkScroll);
+            checkScroll(); // Initial check
+        });
+    </script>
+</body>
+
+</html>
