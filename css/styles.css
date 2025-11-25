@@ -330,15 +330,36 @@ body {
 
 @media (max-width: 768px) {
     .main-nav {
-        padding: 0.6rem 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 0.75rem;
     }
 
     .nav-links {
-        gap: 1.5rem;
+        gap: 0.75rem;
+        font-size: 0.6875rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        order: 2;
     }
 
     .nav-link {
-        font-size: 0.875rem;
+        font-size: 0.8125rem;
+        padding: 0.25rem 0;
+    }
+
+    .nav-lang-switcher {
+        order: 1;
+        margin-left: auto;
+    }
+
+    .nav-lang-switcher .lang-btn {
+        padding: 4px 8px;
+        font-size: 0.75rem;
     }
 }
 
@@ -1785,5 +1806,468 @@ body {
     .arrow-indicators {
         display: none;
         /* Hide on mobile since social bar behaves differently */
+    }
+}
+
+/* ===========================
+   Mobile Responsive Styles
+   =========================== */
+@media (max-width: 768px) {
+
+    /* About Section Mobile */
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        text-align: center;
+    }
+
+    .about-photo-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .about-role-large {
+        font-size: var(--font-size-xl);
+        justify-content: center;
+        /* Center the role */
+    }
+
+    .role-icon-large {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Timeline Mobile */
+    .timeline-container {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .timeline-content {
+        padding-left: 30px;
+        overflow: hidden;
+        /* Prevent horizontal scroll */
+    }
+
+    .timeline-text {
+        padding: var(--spacing-md);
+        width: 100%;
+        /* Ensure full width */
+        box-sizing: border-box;
+    }
+
+    .timeline-date {
+        font-size: 2.5rem;
+    }
+
+    .timeline-title {
+        font-size: var(--font-size-xl);
+        word-wrap: break-word;
+        /* Prevent overflow */
+    }
+
+    .timeline-description {
+        font-size: var(--font-size-base);
+    }
+
+    .timeline-image-wrapper {
+        height: 200px;
+        min-width: auto;
+        width: 100%;
+        /* Full width */
+        max-width: 100%;
+    }
+
+    .timeline-image {
+        object-fit: cover;
+        /* Better fitting for mobile */
+    }
+
+    .timeline-highlights {
+        padding: var(--spacing-sm);
+    }
+
+    .timeline-highlights ul {
+        font-size: var(--font-size-sm);
+    }
+
+    /* Awards/Certifications Mobile - 2 columns */
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+    }
+
+    .cert-item {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--spacing-sm);
+    }
+
+    .cert-item h4 {
+        font-size: var(--font-size-sm);
+    }
+
+    .cert-item p {
+        font-size: var(--font-size-xs);
+    }
+
+    .cert-icon {
+        font-size: var(--font-size-xl);
+    }
+
+    /* Hero Mobile */
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-xl);
+    }
+
+    .hero-description {
+        font-size: var(--font-size-base);
+    }
+
+    /* Skills Carousel Mobile */
+    .skills-carousel {
+        margin-left: calc(-1 * var(--spacing-md));
+        margin-right: calc(-1 * var(--spacing-md));
+    }
+
+    .skill-item img {
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Extra small devices */
+    body {
+        padding-top: 70px;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.75rem;
+    }
+
+    .about-photo-wrapper {
+        width: 160px;
+        height: 160px;
+    }
+
+    .hero-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .timeline-date {
+        font-size: 2rem;
+    }
+
+    .timeline-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .skill-item img {
+        height: 24px;
+    }
+
+    /* Awards single column on very small screens */
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Additional Mobile Timeline Fixes */
+@media (max-width: 768px) {
+    .timeline-entry {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .timeline-content {
+        max-width: calc(100vw - 60px);
+        padding-left: 0 !important;
+        padding-right: 0;
+        margin-left: 30px;
+    }
+
+    .timeline-line-bg,
+    .timeline-line-progress {
+        left: 12px !important;
+        transform: none !important;
+    }
+
+    .timeline-node {
+        left: 12px !important;
+        transform: translateY(-50%) !important;
+    }
+
+    .timeline-text,
+    .timeline-image-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .timeline-company {
+        font-size: var(--font-size-base);
+    }
+
+    .timeline-achievements {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .achievement-item {
+        flex-direction: row;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+}
+
+/* Ensure Awards/Certifications is 2 columns on mobile */
+@media (max-width: 768px) and (min-width: 481px) {
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* Aggressive Mobile Timeline Fixes - Override Everything */
+@media (max-width: 768px) {
+    /* Force body and html to not overflow */
+    html, body {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+
+    /* Timeline container adjustments */
+    .timeline-container {
+        padding: var(--spacing-xl) 0 !important;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    /* Timeline entry adjustments */
+    .timeline-entry {
+        max-width: 100vw;
+        overflow: hidden;
+    }
+
+    /* Timeline content - force to viewport width */
+    .timeline-content {
+        max-width: 100vw !important;
+        width: 100vw !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    /* Timeline text box */
+    .timeline-text {
+        width: calc(100vw - 60px) !important;
+        max-width: calc(100vw - 60px) !important;
+        margin: 0 auto !important;
+        padding: var(--spacing-sm) !important;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    /* Timeline image wrapper */
+    .timeline-image-wrapper {
+        width: calc(100vw - 60px) !important;
+        max-width: calc(100vw - 60px) !important;
+        margin: 0 auto !important;
+        height: 180px !important;
+        box-sizing: border-box;
+    }
+
+    /* Move timeline line and nodes to absolute left */
+    .timeline-line-bg,
+    .timeline-line-progress {
+        left: 20px !important;
+    }
+
+    .timeline-node {
+        left: 20px !important;
+    }
+
+    /* Tech tags wrapping */
+    .timeline-tech {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* Title wrapping */
+    .timeline-title {
+        word-break: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+    }
+
+    /* Description wrapping */
+    .timeline-description {
+        word-break: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+    }
+
+    /* Achievements grid */
+    .timeline-achievements {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .achievement-item {
+        max-width: 100%;
+        word-break: break-word;
+    }
+}
+
+/* Timeline Node Fix for Mobile */
+@media (max-width: 768px) {
+    .timeline-node {
+        left: 30px !important;
+        top: 20px !important;
+        transform: translate(-50%, 0) !important;
+        position: absolute;
+        z-index: 10;
+    }
+
+    .timeline-line-bg,
+    .timeline-line-progress {
+        left: 30px !important;
+        transform: translateX(-50%) !important;
+    }
+
+    /* Add padding to timeline content to make room for the node */
+    .timeline-content {
+        padding-top: 40px !important;
+    }
+}
+
+/* Timeline Node Repositioned - After Image, at Text Card */
+@media (max-width: 768px) {
+    /* Position node at the text card (after image + gap) */
+    .timeline-node {
+        left: 30px !important;
+        top: calc(180px + var(--spacing-lg) + 20px) !important; /* image height + gap + offset */
+        transform: translate(-50%, 0) !important;
+        position: absolute;
+        z-index: 10;
+    }
+
+    /* Remove previous padding-top from timeline-content */
+    .timeline-content {
+        padding-top: 0 !important;
+    }
+
+    /* Align timeline-date to the right on mobile */
+    .timeline-date {
+        text-align: right !important;
+        width: 100%;
+        padding-right: 40px; /* Space from edge, aligns with node */
+    }
+
+    .timeline-header {
+        flex-direction: row !important;
+        justify-content: flex-end !important;
+        align-items: center;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    /* Ensure the date is on the right, role on left if present */
+    .timeline-entry:nth-child(odd) .timeline-header,
+    .timeline-entry:nth-child(even) .timeline-header {
+        flex-direction: row !important;
+    }
+
+    .timeline-entry:nth-child(odd) .timeline-date,
+    .timeline-entry:nth-child(even) .timeline-date {
+        order: 2;
+        text-align: right !important;
+    }
+
+    .timeline-entry:nth-child(odd) .timeline-role,
+    .timeline-entry:nth-child(even) .timeline-role {
+        order: 1;
+    }
+}
+
+/* Better Timeline Node & Year Alignment for Mobile */
+@media (max-width: 768px) {
+    /* More precise node positioning */
+    .timeline-node {
+        left: 30px !important;
+        top: 200px !important; /* Adjusted to align better with text card start */
+        transform: translate(-50%, 0) !important;
+        position: absolute;
+        z-index: 10;
+    }
+
+    /* Year alignment - ensure it's always on the right */
+    .timeline-date {
+        text-align: right !important;
+        margin-left: auto !important;
+        margin-right: 0 !important;
+        padding-right: 10px !important;
+        display: block !important;
+        width: auto !important;
+    }
+
+    /* Timeline header - force right alignment */
+    .timeline-header {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: flex-start !important;
+        width: 100% !important;
+    }
+
+    /* Override odd/even rules for mobile - always same layout */
+    .timeline-entry:nth-child(odd) .timeline-header,
+    .timeline-entry:nth-child(even) .timeline-header {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+
+    .timeline-entry:nth-child(odd) .timeline-date,
+    .timeline-entry:nth-child(even) .timeline-date {
+        order: 2 !important;
+        text-align: right !important;
+        margin-left: auto !important;
+    }
+
+    .timeline-entry:nth-child(odd) .timeline-role,
+    .timeline-entry:nth-child(even) .timeline-role {
+        order: 1 !important;
+        margin-right: auto !important;
+    }
+}
+
+/* Fine-tune Timeline Node Position for Mobile */
+@media (max-width: 768px) {
+    /* Adjust node vertical position */
+    .timeline-node {
+        left: 30px !important;
+        top: 220px !important; /* Increased to align better with text card */
+        transform: translate(-50%, 0) !important;
+        position: absolute;
+        z-index: 10;
+    }
+}
+
+/* For very small phones, adjust differently */
+@media (max-width: 480px) {
+    .timeline-node {
+        top: 210px !important;
     }
 }
